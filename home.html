@@ -1,0 +1,187 @@
+<html>
+	<head> 
+
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+
+		body{
+			background-color: skyblue;
+			
+		}
+
+		ul {
+			list-style-type: none; 
+			margin: 0;
+			padding: 0;
+			overflow: hidden; 
+			position: fixed;
+			top: 180px;
+			width: 80px; 
+			font-size: 90%;
+		}
+
+		li {
+			clear: left;
+			background-color: #333333;
+			text-align: center;
+			border-radius: 0px 10px 0px 10px;
+			}
+
+		li a, .dropbtn {
+			display: block; 
+			color: white; 
+			margin-bottom: 10px;
+			padding: 10px 15px; 
+			text-decoration: none;
+			}
+
+		li a:hover, .dropdown:hover .dropbtn{
+			color: #969696;
+			background-color: black; 
+			border: .5px solid white;
+			border-radius: 0px 10px 0px 10px;
+			}
+
+		li.dropdown{
+			display: block;
+		}
+
+		dropdown-content{
+			display: none;
+			position: absolute;
+			z-index : 1;
+		}
+
+		.dropdown-content a{
+			display: block;
+			color: grey;
+			padding: 10px 10px;
+			text-decoration : none;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content{
+			display: ;
+		}
+
+		.header {
+			background-image:url("https://s1.postimg.org/1084sjbfxb/jihyun_Portfolio.png");
+			background-size: 200px;
+			background-repeat: no-repeat;
+			padding: 30px;
+			margin: 0px;
+			text-align : center;
+			}
+
+		.column {
+			display: inline-block; 
+			vertical-align: top; 
+			margin-left: 0px;
+			}
+
+			.column.side {
+				width: 80px;
+				height: 380px;
+
+				background-image: url(https://cdn.pixabay.com/photo/2013/07/13/12/50/cord-160436_1280.png);
+				background-size: 100%;
+				position: fixed;
+
+			}
+
+			.column.middle {
+				background-color: white;
+				
+				padding: px;
+				width: 85%;
+				margin-left: 100px;
+			}
+
+
+		iframe {
+			border: none;
+			float: right;
+			}
+
+		.textSection{
+
+			margin: 0px;
+			float: left;
+
+		}
+
+
+		.imageSection{
+			margin-left: 0px;
+			height: 30%;
+		}
+
+		footer{
+			  padding:10px;
+			  text-align: center;
+			  color: white; 
+			  clear:left;
+			}
+
+		</style> 
+
+
+
+	</head>
+
+	<body>
+
+		<div class="header">
+		<a href="home.html" style="text-decoration: none;">
+		<h1 style="color: black; stroke: 5px solid black;">Jihyun's</h1>
+
+		<pre style="color: #eaeaea;"> <i>Nick Name: Yekong</i>
+		- 예술 공돌이 -</pre>
+		</a>
+		</div>
+
+		<div class="row">
+			<div class="column side">
+				<ul>
+				<li><a href="home.html">Home</a>
+				</li>
+
+				<li><a href="about.html" target="mainframe">About</a>
+				</li>
+
+				 <li class="dropdown">
+				 	<a href="#" class="dropbtn">Portfolio</a>
+				 	<div class="dropdown-content">
+				 		<a href="art.html" target="mainframe">Art</a>
+				 		<a href="film.html" target="mainframe">Film</a>
+				 		<a href="tech.html" target="mainframe">Tech</a>
+				 	</div>
+				 </li> 
+
+				 <li><a href="contact.html" target="mainframe">Contact</a>
+				 </li>
+
+				</ul>
+			</div>
+
+			
+			<div class="column middle">
+			<iframe src="iframe.html" width=100%; height=450px; name="mainframe">
+			
+			</iframe>
+			</div>
+
+		</div>
+
+		<footer><p>Created by Jihyun Kim, 2017</p></footer>
+	</body>
+</html>
